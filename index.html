@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title>HTML Text Editor</title>
+
+  <script type="text/javascript" src="Scripts/Script.js"></script>
+  <link type="text/css" rel="stylesheet" href="Stylesheets/Styles.css">
+</head>
+
+<body>
+  <div id="workArea">
+    <textarea id="workspace">hi</textarea>
+  </div>
+  <br/>
+  <div id="downloadArea">
+    <input type="text" id="fileName" placeholder="FileName.extension"></input>
+    <button type="button" onclick="downloadText()">Save File</button>
+    <input type="text" id="setFontFamily" placeholder="Editor Font Family"></input>
+    <button onclick="setStyle()">Set Style</button>
+  </div>
+</body>
+</html>
