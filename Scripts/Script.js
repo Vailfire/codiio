@@ -19,6 +19,10 @@ function downloadText() {
 function setStyle() {
   var fontFamily = document.getElementById("setFontFamily").value;
   document.getElementById("workspace").style.fontFamily = fontFamily;
+
 	var fontSize = document.getElementById("setFontSize").value;
 	document.getElementById("workspace").style.fontSize = fontSize;
+
+	var fontColor = document.getElementById("setFontColor").value;
+	document.getElementById("workspace").style.color = fontColor;
 }
