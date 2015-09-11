@@ -6,7 +6,7 @@ function downloadText() {
 
 	var downloadLink = document.createElement("a");
 	downloadLink.download = FileDownloadName;
-	
+
 		// Chrome allows the link to be clicked
 		// without actually adding it to the DOM.
 		downloadLink.href = window.webkitURL.createObjectURL(textFileBlob);
@@ -19,4 +19,6 @@ function downloadText() {
 function setStyle() {
   var fontFamily = document.getElementById("setFontFamily").value;
   document.getElementById("workspace").style.fontFamily = fontFamily;
+	var fontSize = document.getElementById("setFontSize").value;
+	document.getElementById("workspace").style.fontSize = fontSize;
 }
