@@ -19,13 +19,19 @@
     <button type="button" onclick="downloadText()">Save File</button>
 
   </div>
-  <div id="styleSettings">
-    <input type="text" id="setFontFamily" class="editorOptions" placeholder="Editor Font Family"></input>
+  <div id="settingsSlider">
+    <img src="images/settingsGrabber.png" width="64px" height="64px">
+    <div id="styleSettings">
+      <input type="text" id="setFontFamily" class="editorOptions" placeholder="Editor Font Family"></input>
 
-    <input type="text" id="setFontSize" class="editorOptions" placeholder="Editor Font Size"></input>
+      <input type="text" id="setFontSize" class="editorOptions" placeholder="Editor Font Size"></input>
 
-    <input type="text" id="setFontColor" class="editorOptions" placeholder="Editor Font Color"></input>
-    <button onclick="setStyle()" id="styleButton" class="editorOptions">Set Style</button>
-  </div
+      <input type="text" id="setFontColor" class="editorOptions" placeholder="Editor Font Color"></input>
+
+      <input type="text" id="setBgColor" class="editorOptions" placeholder="Editor Background"></input>
+
+      <button onclick="setStyle()" id="styleButton" class="editorOptions">Set Style</button>
+    </div>
+  </div>
 </body>
 </html>
