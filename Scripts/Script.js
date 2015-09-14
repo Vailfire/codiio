@@ -25,4 +25,7 @@ function setStyle() {
 
 	var fontColor = document.getElementById("setFontColor").value;
 	document.getElementById("workspace").style.color = fontColor;
+
+	var bgColor = document.getElementById("setBgColor").value;
+	document.getElementById("workspace").style.backgroundColor = bgColor;
 }
