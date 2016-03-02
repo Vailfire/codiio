@@ -2,11 +2,11 @@
 
 <html>
 <head>
-
+  <?php echo "Hello"; ?>
   <title>HTML Text Editor</title>
 
-  <script type="text/javascript" src="Scripts/Script.js"></script>
-  <link type="text/css" rel="stylesheet" href="Stylesheets/Styles.css">
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <link type="text/css" rel="stylesheet" href="stylesheets/styles.css">
 </head>
 
 <body>
@@ -23,13 +23,15 @@
     <img src="images/settingsGrabber.png" width="64px" height="64px">
     <div id="styleSettings">
       <input type="text" id="setFontFamily" class="editorOptions" placeholder="Editor Font Family"></input>
-
+      </br>
       <input type="text" id="setFontSize" class="editorOptions" placeholder="Editor Font Size"></input>
-
-      <input type="text" id="setFontColor" class="editorOptions" placeholder="Editor Font Color"></input>
-
-      <input type="text" id="setBgColor" class="editorOptions" placeholder="Editor Background"></input>
-
+      </br>
+      <label for="setFontColor" class="editorOptions">Font Color</label>
+      <input type="color" id="setFontColor" class="editorOptions" placeholder="Editor Font Color"></input>
+      </br>
+      <label for="setBgColor" class="editorOptions">Background Color</label>
+      <input type="color" id="setBgColor" class="editorOptions" value="#ffffff"></input>
+      </br>
       <button onclick="setStyle()" id="styleButton" class="editorOptions">Set Style</button>
     </div>
   </div>
