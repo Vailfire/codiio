@@ -1,19 +1,9 @@
-//this function based off of thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
 function downloadText() {
 	var fileText = document.getElementById("workspace").value;
-	var textFileBlob = new Blob([fileText], {type:'text/plain'});
-	var FileDownloadName = document.getElementById("fileName").value;
+	var fileDownloadName = document.getElementById("fileName").value;
 
-	var downloadLink = document.createElement("a");
-	downloadLink.download = FileDownloadName;
-
-		// Chrome allows the link to be clicked
-		// without actually adding it to the DOM.
-		downloadLink.href = window.webkitURL.createObjectURL(textFileBlob);
-
-
-
-	downloadLink.click();
+	var blob = new Blob([fileText], {type: "text/plain;charset=utf-8"});
+	saveAs(blob, fileDownloadName);
 }
 
 function setStyle() {
